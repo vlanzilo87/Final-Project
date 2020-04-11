@@ -8,8 +8,9 @@ header {
 
 h1 {
   text-align: center;
-  color: lime;
+  color: white;
   font-family: 'Bungee Shade', cursive;
+  padding-top: 10%;
 }
 
 h2 {
@@ -33,7 +34,7 @@ nav {
 
 img {
   border-radius: 20%;
-  border: 5px solid lime;
+  border: 5px solid white;
 }
 
 .new {
@@ -46,7 +47,9 @@ img {
   background-image: url("https://s3.amazonaws.com/finecooking.s3.tauntonclud.com/app/uploads/2019/10/15145505/eggplant_parmesan_wide.jpg");
   background-size: cover;
   background-position: center;
-  height: 100vh;
+  position: relative;
+  min-height: 100vh;
+  overflow: hidden;
 }
 
 .enter {
@@ -90,13 +93,13 @@ img {
 
 footer {
   text-align: center;
-  background: purple;
+  background: brown;
   color: white;
-  padding-top: 20px;
+  padding-top: 15px;
   bottom: 0;
   position: absolute;
   width: 100%;
-  font-family: monospace;
+  font-family: cursive;
   font-size: 15px;
 }
 
@@ -129,4 +132,8 @@ footer {
   font-family: 'Bungee Shade', cursive;
   font-size: 30px;
   color: red;
+}
+
+input {
+  background-color: white;
 }

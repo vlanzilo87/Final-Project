@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link rel="stylesheet" href="/css/style.css">
+        <link href="https://fonts.googleapis.com/css?family=Faster+One&display=swap" rel="stylesheet">
+        <title>Edit Recipe</title>
+    </head>
+    <body>
+      <header>
+        <div class="banner">
+          <h1>Abby's Favorites</h1>
+        </div>
+      </header>
+      <nav>
+        <a href="/recipes/new">Add Recipe</a>
+        <a href="/recipes">Back to Recipes</a>
+        <a href="/about">About</a>
+      </nav>
+      <h2>Edit Recipe</h2>
+      <div class="edit">
+        <form action="/recipes/<%=recipe.id%>?_method=PUT" method="POST">
+          Name: <input type="text" name="name" value="<%=recipe.name%>"/><br/>
+          Servings: <input type="number" name="servings" value="<%=recipe.servings%>"/><br/>
+          Steps: <input type="text" name="steps" value="<%=recipe.steps%>"/><br/>
+          Image: <input type="text" name="image" value="<%=recipe.img%>"/><br/>
+          <input id="edit" type="submit" value="Edit Recipe"/>
+        </form>
+      </div>
+      <footer>
+        <p>Thanks for visiting Abby's Favorites!</p>
+      </footer>
+    </body>
+</html>

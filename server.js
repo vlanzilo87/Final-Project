@@ -17,8 +17,8 @@ app.use(express.static('public'))
 app.use(express.urlencoded({extended: true}))
 app.use(methodOverride('_method'))
 
-const partsController = require('./controllers/recipes.js')
-app.use(partsController)
+const recipesController = require('./controllers/recipes.js')
+app.use(recipesController)
 
 //Routes
 //Welcome

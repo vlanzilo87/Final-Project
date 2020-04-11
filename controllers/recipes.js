@@ -6,7 +6,7 @@ const myRecipes = [
   {
     name: 'chicken parm',
     steps: 'dsfjdsfsdfjsd',
-    img:  'url',
+    img:  'https://img.sndimg.com/food/image/upload/c_thumb,q_80,w_412,h_232/v1/img/mpx/5458752_16x9.jpg',
     servings:  4
   },
   {
@@ -93,7 +93,7 @@ recipes.get('/recipes/new', (req, res) => {
 
 //Index
 recipes.get('/recipes', (req, res) => {
-  Part.find({}, (err, allRecipes) => {
+  Recipe.find({}, (err, allRecipes) => {
     res.render('index.ejs', {
       allRecipes: allRecipes
     })
