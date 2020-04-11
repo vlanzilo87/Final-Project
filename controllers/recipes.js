@@ -5,75 +5,63 @@ const Recipe = require('../models/recipes.js')
 const myRecipes = [
   {
     name: 'chicken parm',
+    servings: 4,
     steps: 'dsfjdsfsdfjsd',
-    img:  'https://img.sndimg.com/food/image/upload/c_thumb,q_80,w_412,h_232/v1/img/mpx/5458752_16x9.jpg',
-    servings:  4
+    image: 'https://www.foxandbriar.com/wp-content/uploads/2019/03/Baked-Chicken-Parmesan-7-of-8.jpg'
   },
   {
     name: 'chicken parm',
+    servings: 4,
     steps: 'dsfjdsfsdfjsd',
-    img:  'url',
-    servings:  4
+    image: 'https://img.sndimg.com/food/image/upload/c_thumb,q_80,w_412,h_232/v1/img/mpx/5458752_16x9.jpg'
   },
   {
     name: 'chicken parm',
+    servings: 4,
     steps: 'dsfjdsfsdfjsd',
-    img:  'url',
-    servings:  4
+    image: 'https://pinchofyum.com/wp-content/uploads/chicken-parmesan-recipe-1.jpg'
   },
   {
     name: 'chicken parm',
+    servings: 4,
     steps: 'dsfjdsfsdfjsd',
-    img:  'url',
-    servings:  4
+    image: 'https://img.sndimg.com/food/image/upload/c_thumb,q_80,w_412,h_232/v1/img/mpx/5458752_16x9.jpg'
   },
   {
     name: 'chicken parm',
+    servings: 4,
     steps: 'dsfjdsfsdfjsd',
-    img:  'url',
-    servings:  4
+    image: 'https://img.sndimg.com/food/image/upload/c_thumb,q_80,w_412,h_232/v1/img/mpx/5458752_16x9.jpg'
   },
   {
     name: 'chicken parm',
+    servings: 4,
     steps: 'dsfjdsfsdfjsd',
-    img:  'url',
-    servings:  4
+    image: 'https://img.sndimg.com/food/image/upload/c_thumb,q_80,w_412,h_232/v1/img/mpx/5458752_16x9.jpg'
   },
   {
     name: 'chicken parm',
+    servings: 4,
     steps: 'dsfjdsfsdfjsd',
-    img:  'url',
-    servings:  4
+    image: 'https://img.sndimg.com/food/image/upload/c_thumb,q_80,w_412,h_232/v1/img/mpx/5458752_16x9.jpg'
   },
   {
     name: 'chicken parm',
+    servings: 4,
     steps: 'dsfjdsfsdfjsd',
-    img:  'url',
-    servings:  4
+    image: 'https://img.sndimg.com/food/image/upload/c_thumb,q_80,w_412,h_232/v1/img/mpx/5458752_16x9.jpg'
   },
   {
     name: 'chicken parm',
+    servings: 4,
     steps: 'dsfjdsfsdfjsd',
-    img:  'url',
-    servings:  4
+    image: 'https://img.sndimg.com/food/image/upload/c_thumb,q_80,w_412,h_232/v1/img/mpx/5458752_16x9.jpg'
   },
   {
     name: 'chicken parm',
+    servings: 4,
     steps: 'dsfjdsfsdfjsd',
-    img:  'url',
-    servings:  4
-  },
-  {
-    name: 'chicken parm',
-    steps: 'dsfjdsfsdfjsd',
-    img:  'url',
-    servings:  4
-  },
-  {
-    name: 'chicken parm',
-    steps: 'dsfjdsfsdfjsd',
-    img:  'url',
-    servings:  4
+    image: 'https://img.sndimg.com/food/image/upload/c_thumb,q_80,w_412,h_232/v1/img/mpx/5458752_16x9.jpg'
   }
 ]
 

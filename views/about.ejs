@@ -6,8 +6,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="/css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Faster+One&display=swap" rel="stylesheet">
-
-    <title>Recipes Index</title>
+    <title>Show Page</title>
   </head>
   <body>
     <header>
@@ -16,19 +15,12 @@
       </div>
     </header>
     <nav>
-      <a href="/recipes/new">Request New Part</a>
+      <a href="/recipes">Back to Index</a>
       <a href="/about">About</a>
     </nav>
-    <h2>Recipes!</h2>
-    <div class="big-container">
-      <% for (let i=0; i < allRecipes.length; i++) { %>
-      <div class="flex-container">
-        <a href="/recipes/<%=allRecipes[i].id%>"><img src="<%=allRecipes[i].image%>" width="200" height="200"></a>
-        <br>
-        <h4><%=allRecipes[i].name%></h4>
-        <br>
-      </div>
-      <% } %>
+    <h2>About Us</h2>
+    <div class="show">
+      <p>About Us</p>
       <footer>
         <p>Thanks for visiting Abby's Favorites!</p>
       </footer>

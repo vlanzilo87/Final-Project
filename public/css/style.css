@@ -10,13 +10,14 @@ h1 {
   text-align: center;
   color: white;
   font-family: 'Bungee Shade', cursive;
-  padding-top: 10%;
+  padding: 5%;
 }
 
 h2 {
   text-align: center;
   color: darkblue;
   font-family: 'Bungee Shade', cursive;
+  padding: 20px;
 }
 
 h4 {
@@ -24,7 +25,7 @@ h4 {
 }
 
 nav {
-  background: purple;
+  background: brown;
   padding: 10px;
   display: flex;
   flex-direction: row;
@@ -33,13 +34,13 @@ nav {
 }
 
 img {
-  border-radius: 20%;
-  border: 5px solid white;
+  border-radius: 50%;
+  border: 5px solid yellow;
 }
 
 .new {
   text-align: center;
-  font-family: monospace;
+  font-family: cursive;
   font-size: 20px;
 }
 
@@ -63,7 +64,7 @@ img {
     flex-wrap: wrap;
     justify-content: space-around;
     position: relative;
-    font-family: monospace;
+    font-family: cursive;
     padding-bottom: 10%;
 }
 
@@ -74,10 +75,10 @@ img {
 } */
 
 .banner {
-  background: url("https://ricardoe30.files.wordpress.com/2010/12/cropped-e30-banner1.jpg");
+  background: url("https://media.istockphoto.com/photos/collage-of-bruschetta-antipasti-snack-tapas-banner-picture-id1144168039?k=6&m=1144168039&s=170667a&w=0&h=7R2HUqJJGwCR021rGBL6HI4vj2g57g6FUtnhUKqPabo=");
   text-align: center;
   margin: 0 auto;
-  padding: 120px;
+  padding: 10px;
   background-size: cover;
   background-position: center;
   font-family: 'Bungee Shade', cursive;
@@ -106,10 +107,10 @@ footer {
 .paragraph {
   margin: 20px 100px;
   padding: 10px;
-  border: 10px solid lime;
+  border: 10px solid yellow;
   color: lightgrey;
-  background-color: purple;
-  font-family: monospace;
+  background-color: pink;
+  font-family: cursive;
   font-size: 20px;
   text-align: center;
 }
@@ -124,7 +125,7 @@ footer {
 
 .edit {
   text-align: center;
-  font-family: monospace;
+  font-family: cursive;
   font-size: 20px;
 }
 
