@@ -1,36 +1,68 @@
 body {
-  background: lightblue;
+  background: pink;
 }
 
 header {
-  background: purple;
+  text-align: center;
 }
 
 h1 {
   text-align: center;
-  color: white;
+  color: brown;
   font-family: 'Bungee Shade', cursive;
   padding: 5%;
+  background-color: yellow;
+  border-radius: 80%;
+  width: 600px;
+  margin: auto;
 }
 
 h2 {
   text-align: center;
-  color: darkblue;
+  color: yellow;
   font-family: 'Bungee Shade', cursive;
   padding: 20px;
+  background-color: brown;
 }
 
 h4 {
   text-align: center;
 }
 
-nav {
+a {
+  color: yellow;
+  display: block;
+}
+
+a:hover {
+  color: brown;
+  text-decoration: none;
+}
+
+.sidebar {
   background: brown;
-  padding: 10px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
+  padding-top: 20px;
   font-family: 'Bungee Shade', cursive;
+  height: 100%;
+  width: 200px;
+  position: absolute;
+  text-align: center;
+
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+  padding: 10px 0;
+
+}
+
+li:hover {
+  background-color: yellow;
 }
 
 img {
@@ -60,23 +92,24 @@ img {
 
 .big-container {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
     position: relative;
     font-family: cursive;
     padding-bottom: 10%;
 }
 
-/* .flex-container {
+.main {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   flex-wrap: wrap;
-} */
+  justify-content: space-around;
+  position: relative;
+  font-family: cursive;
+  padding-bottom: 10%;
+  margin-left: 200px;
+}
 
 .banner {
   background: url("https://media.istockphoto.com/photos/collage-of-bruschetta-antipasti-snack-tapas-banner-picture-id1144168039?k=6&m=1144168039&s=170667a&w=0&h=7R2HUqJJGwCR021rGBL6HI4vj2g57g6FUtnhUKqPabo=");
-  text-align: center;
   margin: 0 auto;
   padding: 10px;
   background-size: cover;
