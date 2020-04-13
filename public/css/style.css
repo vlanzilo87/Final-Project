@@ -1,5 +1,5 @@
 body {
-  background: pink;
+  background: #009933;
 }
 
 header {
@@ -9,7 +9,7 @@ header {
 h1 {
   text-align: center;
   color: brown;
-  font-family: 'Bungee Shade', cursive;
+  font-family: 'Ribeye', cursive;
   padding: 5%;
   background-color: yellow;
   border-radius: 80%;
@@ -20,8 +20,9 @@ h1 {
 h2 {
   text-align: center;
   color: yellow;
-  font-family: 'Bungee Shade', cursive;
+  font-family: 'Ribeye', cursive;
   padding: 20px;
+  margin: 0;
   background-color: brown;
 }
 
@@ -42,7 +43,7 @@ a:hover {
 .sidebar {
   background: brown;
   padding-top: 20px;
-  font-family: 'Bungee Shade', cursive;
+  font-family: 'Ribeye', cursive;
   height: 100%;
   width: 200px;
   position: absolute;
@@ -58,7 +59,7 @@ ul {
 li {
   list-style: none;
   padding: 10px 0;
-
+  border-radius: 50%;
 }
 
 li:hover {
@@ -68,11 +69,13 @@ li:hover {
 img {
   border-radius: 50%;
   border: 5px solid yellow;
+  width: 300px;
+  height: 300px;
 }
 
 .new {
   text-align: center;
-  font-family: cursive;
+  font-family: 'Ribeye', cursive;
   font-size: 20px;
 }
 
@@ -87,14 +90,15 @@ img {
 
 .enter {
   text-align: center;
-  font-family: 'Bungee Shade', cursive;
+  font-family: 'Ribeye', cursive;
 }
 
 .big-container {
-    display: flex;
+    display: block;
     position: relative;
-    font-family: cursive;
-    padding-bottom: 10%;
+    font-family: 'Ribeye', cursive;
+    min-height: 100vh;
+    overflow: hidden;
 }
 
 .main {
@@ -103,9 +107,10 @@ img {
   flex-wrap: wrap;
   justify-content: space-around;
   position: relative;
-  font-family: cursive;
-  padding-bottom: 10%;
+  font-family: 'Ribeye', cursive;
+  padding-top: 20px;
   margin-left: 200px;
+  min-height: 100vh;
 }
 
 .banner {
@@ -114,36 +119,36 @@ img {
   padding: 10px;
   background-size: cover;
   background-position: center;
-  font-family: 'Bungee Shade', cursive;
+  font-family: 'Ribeye', cursive;
 }
 
 #new {
-  font-family: 'Bungee Shade', cursive;
+  font-family: 'Ribeye', cursive;
 }
 
 #edit {
-  font-family: 'Bungee Shade', cursive;
+  font-family: 'Ribeye', cursive;
 }
 
 footer {
   text-align: center;
   background: brown;
-  color: white;
+  color: yellow;
   padding-top: 15px;
   bottom: 0;
   position: absolute;
   width: 100%;
-  font-family: cursive;
+  font-family: 'Ribeye', cursive;
   font-size: 15px;
 }
 
 .paragraph {
-  margin: 20px 100px;
+  margin: 20px 250px;
   padding: 10px;
-  border: 10px solid yellow;
-  color: lightgrey;
-  background-color: pink;
-  font-family: cursive;
+  border: 5px solid yellow;
+  color: yellow;
+  background-color: brown;
+  font-family: 'Ribeye', cursive;
   font-size: 20px;
   text-align: center;
 }
@@ -152,22 +157,35 @@ footer {
   position: relative;
   padding-bottom: 100px;
   text-align: center;
-  font-family: 'Bungee Shade', cursive;
+  font-family: 'Ribeye', cursive;
   font-size: 20px;
 }
 
 .edit {
   text-align: center;
-  font-family: cursive;
+  font-family: 'Ribeye', cursive;
   font-size: 20px;
 }
 
 .list {
-  font-family: 'Bungee Shade', cursive;
+  font-family: 'Ribeye', cursive;
   font-size: 30px;
   color: red;
 }
 
 input {
-  background-color: white;
+  background-color: yellow;
+  color: brown;
+}
+
+.input {
+  border-radius: 50%;
+}
+
+.welcomeheading {
+  padding: 40px 0;
+}
+
+.index {
+  display: flex;
 }

@@ -5,18 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="/css/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Faster+One&display=swap" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css?family=Ribeye&display=swap" rel="stylesheet">
     <title>Recipes Index</title>
   </head>
   <body>
+    <div class="big-container">
     <header>
       <div class="banner">
         <h1>Abby's Favorites</h1>
       </div>
     </header>
     <h2>Recipes!</h2>
-    <div class="big-container">
       <div class="sidebar">
         <ul>
           <li><a href="/recipes/new">New Recipe</a></li>
@@ -24,14 +23,9 @@
         </ul>
       </div>
       <div class="main">
-      <% for (let i=0; i < allRecipes.length; i++) { %>
-      <div class="recipe-single">
-        <a href="/recipes/<%=allRecipes[i].id%>"><img src="<%=allRecipes[i].image%>" width="200" height="200"></a>
-        <br>
-        <h4><%=allRecipes[i].name%></h4>
-        <br>
-      </div>
-      <% } %>
+          <a href="/recipes/appetizers"><h4>Appetizers</h4><img src="https://www.anduzzis.com/wp-content/uploads/Chef-Salad-1200x675.jpg" alt="appetizer"></a>
+          <a href="/recipes/entrees"><h4>Entrées</h4><img src="https://www.eatwell101.com/wp-content/uploads/2020/01/Garlic-Parmesan-Shrimp-recipe.jpg" alt="entree"></a>
+          <a href="/recipes/desserts"><h4>Desserts</h4><img src="https://images-gmi-pmc.edge-generalmills.com/e8c5233a-3ecb-4ddf-be69-9c2b17b239e8.jpg" alt="dessert"></a>
       </div>
       <footer>
         <p>Thanks for visiting Abby's Favorites!</p>

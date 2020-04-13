@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="/css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Ribeye&display=swap" rel="stylesheet">
-    <title>About</title>
+    <title>Show Appetizer</title>
   </head>
   <body>
     <div class="big-container">
@@ -15,15 +15,25 @@
         <h1>Abby's Favorites</h1>
       </div>
     </header>
-    <h2>About</h2>
+    <h2>Enjoy!</h2>
       <div class="sidebar">
         <ul>
-          <li><a href="/recipes/new">New Recipe</a></li>
+          <li><a href="/index">Recipe Index</a></li>
           <li><a href="/about">About</a></li>
         </ul>
       </div>
-      <div class="paragraph">
-        <p>Abby's Favorites is a collection of some of our favorite dishes. Regardless of origin, we've made a place where people can go to find some delicious and relatively easy recipes. Members are also able to share their favorite meals as well!</p>
+      <div class="show">
+        <img src="<%=appetizer.image%>" width="300" height="300">
+        <br>
+        <br>
+        <div class="list">
+          <%=appetizer.name%>
+          <br>
+          <%=appetizer.servings%>
+          <br>
+          $<%=appetizer.steps%>
+          <br>
+        </div>
       </div>
       <footer>
         <p>Thanks for visiting Abby's Favorites!</p>

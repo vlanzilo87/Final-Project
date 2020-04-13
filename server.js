@@ -1,7 +1,5 @@
-
 //Dependencies
 const express = require('express')
-
 const mongoose = require('mongoose')
 const methodOverride = require('method-override')
 
@@ -20,10 +18,24 @@ app.use(methodOverride('_method'))
 const recipesController = require('./controllers/recipes.js')
 app.use(recipesController)
 
+const appetizersController = require('./controllers/appetizers.js')
+app.use(appetizersController)
+
+const entreesController = require('./controllers/entrees.js')
+app.use(entreesController)
+
+const dessertsController = require('./controllers/desserts.js')
+app.use(dessertsController)
+
 //Routes
 //Welcome
 app.get('/', (req, res) => {
   res.render('welcome.ejs')
+})
+
+//Index
+app.get('/index', (req, res) => {
+  res.render('index.ejs')
 })
 
 //About

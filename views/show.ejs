@@ -5,42 +5,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="/css/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Faster+One&display=swap" rel="stylesheet">
-    <title>Show Page</title>
+    <link href="https://fonts.googleapis.com/css?family=Ribeye&display=swap" rel="stylesheet">
+    <title>Show</title>
   </head>
   <body>
+    <div class="big-container">
     <header>
       <div class="banner">
         <h1>Abby's Favorites</h1>
       </div>
     </header>
-    <nav>
-      <a href="/parts">Back to Index</a>
-      <a href="/about">About</a>
-    </nav>
-    <h2>Part Show Page</h2>
-    <div class="show">
-      <img src="<%=recipe.image%>" width="300" height="300">
-      <br>
-      <br>
-      <div class="list">
-        <%=recipe.name%>
-        <br>
-        <%=recipe.servings%>
-        <br>
-        $<%=recipe.steps%>
-        <br>
+    <h2>Enjoy!</h2>
+
+      <div class="sidebar">
+        <ul>
+          <li><a href="/recipes/new">New Recipe</a></li>
+          <li><a href="/about">About</a></li>
+        </ul>
       </div>
-      <br>
-      <button type="button" name="buy">BUY</button>
-      <form action="/recipes/new"><input type="submit" value="REQUEST NEW PART"/></form>
-      <form action="/recipes/<%=recipe.id%>/edit"><input type="submit" value="EDIT"/></form>
-      <form action="/recipes/<%=recipe.id%>?_method=DELETE" method="POST"><input type="submit" value="DELETE"/></form>
-      <div class="footer">
-        <footer>
-          <p>Thanks for visiting Abby's Favorites!</p>
-        </footer>
+      <div class="show">
+        <img src="<%=recipe.image%>" width="300" height="300">
+        <br>
+        <br>
+        <div class="list">
+          <%=recipe.name%>
+          <br>
+          <%=recipe.servings%>
+          <br>
+          $<%=recipe.steps%>
+          <br>
+        </div>
+        <br>
+        <form action="/recipes/<%=recipe.id%>/edit"><input type="submit" value="EDIT"/></form>
+        <form action="/recipes/<%=recipe.id%>?_method=DELETE" method="POST"><input type="submit" value="DELETE"/></form>
       </div>
+      <footer>
+        <p>Thanks for visiting Abby's Favorites!</p>
+      </footer>
     </div>
   </body>
 </html>
