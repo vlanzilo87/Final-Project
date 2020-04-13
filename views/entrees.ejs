@@ -6,7 +6,6 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="/css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Ribeye&display=swap" rel="stylesheet">
-
     <title>Entrées</title>
   </head>
   <body>
@@ -17,20 +16,22 @@
       </div>
     </header>
     <h2>Entrées!</h2>
-
       <div class="sidebar">
         <ul>
-          <li><a href="/recipes/new">New Recipe</a></li>
+          <li><a href="/index">Home</a></li>
+          <li><a href="/recipes/new">Add Recipe</a></li>
           <li><a href="/about">About</a></li>
+          <li><a href="/appetizers">Appetizers</a></li>
           <li><a href="/entrees">Entrées</a></li>
+          <li><a href="/desserts">Desserts</a></li>
         </ul>
       </div>
       <div class="main">
-      <% for (let i=0; i < allRecipes.length; i++) { %>
+      <% for (let i=0; i < allEntrees.length; i++) { %>
       <div class="recipe-single">
-        <a href="/recipes/<%=allRecipes[i].id%>"><img src="<%=allRecipes[i].image%>" width="200" height="200"></a>
+        <a href="/entrees/<%=allEntrees[i].id%>"><img src="<%=allEntrees[i].image%>" width="200" height="200"></a>
         <br>
-        <h4><%=allRecipes[i].name%></h4>
+        <h4><%=allEntrees[i].name%></h4>
         <br>
       </div>
       <% } %>
