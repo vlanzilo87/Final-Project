@@ -92,7 +92,7 @@ recipes.get('/recipes/new', (req, res) => {
 //Index
 recipes.get('/recipes', (req, res) => {
   Recipe.find({}, (err, allRecipes) => {
-    res.render('index.ejs', {
+    res.render('recipes.ejs', {
       allRecipes: allRecipes
     })
   })

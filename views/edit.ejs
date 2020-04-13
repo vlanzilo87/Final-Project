@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="/css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Ribeye&display=swap" rel="stylesheet">
-    <title>Edit</title>
+    <title>Edit Recipe</title>
   </head>
   <body>
     <div class="big-container">
@@ -19,8 +19,13 @@
 
       <div class="sidebar">
         <ul>
-          <li><a href="/recipes/new">New Recipe</a></li>
+          <li><a href="/index">Home</a></li>
           <li><a href="/about">About</a></li>
+          <li><a href="/appetizers">Appetizers</a></li>
+          <li><a href="/entrees">Entrées</a></li>
+          <li><a href="/desserts">Desserts</a></li>
+          <li><a href="/recipes">Your Recipes</a></li>
+          <li><a href="/recipes/new">Add Recipe</a></li>
         </ul>
       </div>
       <div class="edit">
@@ -29,7 +34,8 @@
           Servings: <input type="number" name="servings" value="<%=recipe.servings%>"/><br/>
           Steps: <textarea rows="4" cols="30">Add steps here</textarea><br/>
           Image: <input type="text" name="image" value="<%=recipe.image%>"/><br/>
-          <input type="submit" value="Edit Recipe"/>
+          <br>
+          <input class="input" type="submit" value="Edit Recipe"/>
         </form>
       </div>
       <footer>

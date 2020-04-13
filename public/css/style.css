@@ -1,5 +1,5 @@
 body {
-  background: #009933;
+  background-color: #197d3e;
 }
 
 header {
@@ -12,6 +12,7 @@ h1 {
   font-family: 'Ribeye', cursive;
   padding: 5%;
   background-color: yellow;
+  border: 5px solid #197d3e;
   border-radius: 80%;
   width: 600px;
   margin: auto;
@@ -19,11 +20,11 @@ h1 {
 
 h2 {
   text-align: center;
-  color: yellow;
+  color: #197d3e;
   font-family: 'Ribeye', cursive;
   padding: 10px;
   margin: 0;
-  background-color: brown;
+  background-color: #fc9d03;
 }
 
 h4 {
@@ -41,7 +42,7 @@ a:hover {
 }
 
 .sidebar {
-  background: brown;
+  background-color: brown;
   padding-top: 20px;
   font-family: 'Ribeye', cursive;
   height: 100%;
@@ -63,6 +64,7 @@ li {
 
 li:hover {
   background-color: yellow;
+  border: 5px solid #197d3e;
 }
 
 img {
@@ -128,7 +130,7 @@ img:hover {
 
 footer {
   text-align: center;
-  background-color: brown;
+  background-color: #fc9d03;
   color: yellow;
   padding-top: 15px;
   bottom: 0;
@@ -140,7 +142,7 @@ footer {
 
 .paragraph {
   margin: 40px;
-  margin-left: 400px;
+  margin-left: 300px;
   margin-right: 200px;
   padding: 10px;
   border: 5px solid yellow;
@@ -174,6 +176,7 @@ footer {
 input {
   background-color: yellow;
   color: brown;
+  border: 5px solid #197d3e;
 }
 
 .input {

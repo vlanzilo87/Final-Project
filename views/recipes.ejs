@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="/css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Ribeye&display=swap" rel="stylesheet">
-    <title>Show Appetizer</title>
+    <title>Your Recipes</title>
   </head>
   <body>
     <div class="big-container">
@@ -15,7 +15,7 @@
         <h1>Abby's Favorites</h1>
       </div>
     </header>
-    <h2>Enjoy!</h2>
+    <h2>Your Recipes!</h2>
       <div class="sidebar">
         <ul>
           <li><a href="/index">Home</a></li>
@@ -23,19 +23,18 @@
           <li><a href="/appetizers">Appetizers</a></li>
           <li><a href="/entrees">Entrées</a></li>
           <li><a href="/desserts">Desserts</a></li>
-          <li><a href="/recipes">Your Recipes</a></li>
           <li><a href="/recipes/new">Add Recipe</a></li>
         </ul>
       </div>
-      <div class="show">
-        <img src="<%=appetizer.image%>" width="300" height="300">
+      <div class="main">
+      <% for (let i=0; i < allRecipes.length; i++) { %>
+      <div class="recipe-single">
+        <a href="/recipes/<%=allRecipes[i].id%>"><img src="<%=allRecipes[i].image%>" width="200" height="200"></a>
         <br>
-        <div class="list">
-          <p><%=appetizer.name%></p>
-          <p>Servings: <%=appetizer.servings%></p>
-          <a id="recipe" href="<%=appetizer.steps%>">Recipe</a>
-          <br>
-        </div>
+        <h4><%=allRecipes[i].name%></h4>
+        <br>
+      </div>
+      <% } %>
       </div>
       <footer>
         <p>Thanks for visiting Abby's Favorites!</p>
