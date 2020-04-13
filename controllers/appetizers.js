@@ -4,9 +4,9 @@ const Appetizer = require('../models/appetizers.js')
 
 const myAppetizers = [
   {
-    name: 'chocolate pie',
+    name: 'bruschetta',
     servings: 4,
-    steps: 'dsfjdsfsdfjsd',
+    steps: 'https://www.delish.com/cooking/recipe-ideas/a27409128/best-bruschetta-tomato-recipe/',
     image: 'https://www.foxandbriar.com/wp-content/uploads/2019/03/Baked-Chicken-Parmesan-7-of-8.jpg'
   },
   {

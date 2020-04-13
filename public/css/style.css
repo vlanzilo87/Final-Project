@@ -21,7 +21,7 @@ h2 {
   text-align: center;
   color: yellow;
   font-family: 'Ribeye', cursive;
-  padding: 20px;
+  padding: 10px;
   margin: 0;
   background-color: brown;
 }
@@ -107,7 +107,8 @@ img {
   justify-content: space-around;
   position: relative;
   font-family: 'Ribeye', cursive;
-  padding-top: 20px;
+  padding: 20px;
+  padding-bottom: 50px;
   margin-left: 200px;
   min-height: 100vh;
 }
@@ -118,14 +119,6 @@ img {
   padding: 10px;
   background-size: cover;
   background-position: center;
-  font-family: 'Ribeye', cursive;
-}
-
-#new {
-  font-family: 'Ribeye', cursive;
-}
-
-#edit {
   font-family: 'Ribeye', cursive;
 }
 
@@ -153,6 +146,7 @@ footer {
 }
 
 .show {
+  padding-top: 20px;
   padding-bottom: 100px;
   text-align: center;
   font-family: 'Ribeye', cursive;
@@ -186,4 +180,18 @@ input {
 
 .index {
   display: flex;
+}
+
+.new {
+  padding-top: 20px;
+  padding-bottom: 100px;
+}
+
+textarea {
+  background-color: yellow;
+  color: brown;
+}
+
+p {
+  color: brown;
 }

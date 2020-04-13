@@ -29,13 +29,10 @@
       <div class="show">
         <img src="<%=appetizer.image%>" width="300" height="300">
         <br>
-        <br>
         <div class="list">
-          <%=appetizer.name%>
-          <br>
-          <%=appetizer.servings%>
-          <br>
-          $<%=appetizer.steps%>
+          <p><%=appetizer.name%></p>
+          <p>Servings: <%=appetizer.servings%></p>
+          <a id="recipe" href="<%=appetizer.steps%>">Recipe</a>
           <br>
         </div>
       </div>
