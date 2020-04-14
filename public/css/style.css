@@ -107,6 +107,12 @@ img:hover {
   font-size: 20px;
 }
 
+/* @media only screen and (max-width: 600px) {
+  .new {
+    margin-left: 100px;
+  }
+} */
+
 .welcome {
   background-image: url("https://s3.amazonaws.com/finecooking.s3.tauntonclud.com/app/uploads/2019/10/15145505/eggplant_parmesan_wide.jpg");
   background-size: cover;
@@ -133,7 +139,7 @@ img:hover {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: flex-start;
   position: relative;
   font-family: 'Ribeye', cursive;
   padding: 20px;
@@ -241,6 +247,10 @@ p {
   color: yellow;
 }
 
+.recipe-single {
+  margin: 0 10px;
+}
+
 .video {
   text-align: center;
   margin-bottom: 100px;
@@ -252,3 +262,10 @@ p {
     margin-left: 75px;
   }
 }
+
+/* @media only screen and (max-width: 600px) {
+  iframe {
+    width: 640px;
+    height: 360px;
+  }
+} */
