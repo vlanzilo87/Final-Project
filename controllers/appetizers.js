@@ -28,10 +28,10 @@ const myAppetizers = [
     image: 'https://www.jocooks.com/wp-content/uploads/2011/03/easy-crab-cakes-1.jpg'
   },
   {
-    name: 'Jalapeno Poppers',
+    name: 'Chef Salad',
     servings: 4,
-    steps: 'https://www.allrecipes.com/recipe/20858/best-ever-jalapeno-poppers/?internalSource=staff%20pick&referringId=1241&referringContentType=Recipe%20Hub',
-    image: 'https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fcdn-image.myrecipes.com%2Fsites%2Fdefault%2Ffiles%2Fstyles%2F4_3_horizontal_-_1200x900%2Fpublic%2Fair-fryer-jalapeno-poppers-dcms-large.jpg%3Fitok%3DE_R2u2KI'
+    steps: 'https://thecozycook.com/chef-salad/',
+    image: 'https://sirpizza-mi.com/wp-content/uploads/2018/07/Chef-Salad-IMG_0003-1183.jpg'
   }
 ]
 

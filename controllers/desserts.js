@@ -5,35 +5,34 @@ const Dessert = require('../models/desserts.js')
 const myDesserts = [
   {
     name: 'Double Chocolate Cupcakes',
-    servings: 4,
-    steps: 'dsfjdsfsdfjsd',
-    image: 'https://www.foxandbriar.com/wp-content/uploads/2019/03/Baked-Chicken-Parmesan-7-of-8.jpg'
+    servings: 8,
+    steps: 'https://sallysbakingaddiction.com/super-moist-chocolate-cupcakes/',
+    image: 'https://chocolatechocolateandmore.com/wp-content/uploads/2015/12/Double-Chocolate-Cupcakes-with-Chocolate-Buttercream.jpg'
   },
   {
-    name: 'chicken parm',
-    servings: 4,
-    steps: 'dsfjdsfsdfjsd',
-    image: 'https://img.sndimg.com/food/image/upload/c_thumb,q_80,w_412,h_232/v1/img/mpx/5458752_16x9.jpg'
+    name: 'Strawberry Cheesecake',
+    servings: 8,
+    steps: 'https://www.delish.com/cooking/recipe-ideas/recipes/a52465/strawberry-cheesecake-recipe/',
+    image: 'https://hips.hearstapps.com/del.h-cdn.co/assets/17/19/1494632126-delish-strawberry-cheesecake-1.jpg'
   },
   {
-    name: 'chicken parm',
+    name: 'Vanilla Ice Cream',
     servings: 4,
-    steps: 'dsfjdsfsdfjsd',
-    image: 'https://pinchofyum.com/wp-content/uploads/chicken-parmesan-recipe-1.jpg'
+    steps: 'https://www.tasteofhome.com/recipes/homemade-vanilla-ice-cream/',
+    image: 'https://www.kingarthurflour.com/sites/default/files/styles/featured_image/public/recipe_legacy/4163-3-large.jpg?itok=ztpZXNRg'
   },
   {
-    name: 'chicken parm',
+    name: 'Chocolate Chip Cookies',
     servings: 4,
-    steps: 'dsfjdsfsdfjsd',
-    image: 'https://img.sndimg.com/food/image/upload/c_thumb,q_80,w_412,h_232/v1/img/mpx/5458752_16x9.jpg'
+    steps: 'https://www.allrecipes.com/recipe/10813/best-chocolate-chip-cookies/',
+    image: 'https://www.handletheheat.com/wp-content/uploads/2018/02/BAKERY-STYLE-CHOCOLATE-CHIP-COOKIES-9.jpg'
   },
   {
-    name: 'chicken parm',
+    name: 'Lemon Meringue Pie',
     servings: 4,
-    steps: 'dsfjdsfsdfjsd',
-    image: 'https://img.sndimg.com/food/image/upload/c_thumb,q_80,w_412,h_232/v1/img/mpx/5458752_16x9.jpg'
+    steps: 'https://whatscookingamerica.net/LemonMeringuePie.htm',
+    image: 'https://whatscookingamerica.net/wp-content/uploads/2015/10/lemon-meringue-pie-SQ.jpg'
   }
-
 ]
 
 //Routes
