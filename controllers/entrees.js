@@ -4,64 +4,34 @@ const Entree = require('../models/entrees.js')
 
 const myEntrees = [
   {
-    name: 'chocolate pie',
-    servings: 4,
-    steps: 'dsfjdsfsdfjsd',
-    image: 'https://www.foxandbriar.com/wp-content/uploads/2019/03/Baked-Chicken-Parmesan-7-of-8.jpg'
+    name: 'Eggplant Parmesan',
+    servings: 6,
+    steps: 'https://www.browneyedbaker.com/eggplant-parmesan/',
+    image: 'https://www.browneyedbaker.com/wp-content/uploads/2018/02/eggplant-parmesan-39-754.jpg'
   },
   {
-    name: 'chicken parm',
+    name: 'Steak & Mashed Potatoes',
     servings: 4,
-    steps: 'dsfjdsfsdfjsd',
-    image: 'https://img.sndimg.com/food/image/upload/c_thumb,q_80,w_412,h_232/v1/img/mpx/5458752_16x9.jpg'
+    steps: 'https://albertamilk.com/recipes/peppered-steak-with-potatoes/',
+    image: 'https://www.rachaelraymag.com/.image/t_share/MTQ4ODcyMjE5NzY0NzI5NTIz/strip-steaks-with-rosemary-garlic-butter-102272708.jpg'
   },
   {
-    name: 'chicken parm',
+    name: 'Lemon Shrimp & Rice',
     servings: 4,
-    steps: 'dsfjdsfsdfjsd',
-    image: 'https://pinchofyum.com/wp-content/uploads/chicken-parmesan-recipe-1.jpg'
+    steps: 'https://www.tasteofhome.com/recipes/lemon-shrimp-with-parmesan-rice/',
+    image: 'https://i2.wp.com/wellplated.com/wp-content/uploads/2019/05/Garlic-Butter-Shrimp-600x756.jpg'
   },
   {
-    name: 'chicken parm',
+    name: 'Chicken Quesadillas',
     servings: 4,
-    steps: 'dsfjdsfsdfjsd',
-    image: 'https://img.sndimg.com/food/image/upload/c_thumb,q_80,w_412,h_232/v1/img/mpx/5458752_16x9.jpg'
+    steps: 'https://lilluna.com/chicken-quesadillas/',
+    image: 'https://www.onceuponachef.com/images/2014/02/Chipotle-Chicken-Quesadillas-1-760x474.jpg'
   },
   {
-    name: 'chicken parm',
+    name: 'Pesto Pasta',
     servings: 4,
-    steps: 'dsfjdsfsdfjsd',
-    image: 'https://img.sndimg.com/food/image/upload/c_thumb,q_80,w_412,h_232/v1/img/mpx/5458752_16x9.jpg'
-  },
-  {
-    name: 'chicken parm',
-    servings: 4,
-    steps: 'dsfjdsfsdfjsd',
-    image: 'https://img.sndimg.com/food/image/upload/c_thumb,q_80,w_412,h_232/v1/img/mpx/5458752_16x9.jpg'
-  },
-  {
-    name: 'chicken parm',
-    servings: 4,
-    steps: 'dsfjdsfsdfjsd',
-    image: 'https://img.sndimg.com/food/image/upload/c_thumb,q_80,w_412,h_232/v1/img/mpx/5458752_16x9.jpg'
-  },
-  {
-    name: 'chicken parm',
-    servings: 4,
-    steps: 'dsfjdsfsdfjsd',
-    image: 'https://img.sndimg.com/food/image/upload/c_thumb,q_80,w_412,h_232/v1/img/mpx/5458752_16x9.jpg'
-  },
-  {
-    name: 'chicken parm',
-    servings: 4,
-    steps: 'dsfjdsfsdfjsd',
-    image: 'https://img.sndimg.com/food/image/upload/c_thumb,q_80,w_412,h_232/v1/img/mpx/5458752_16x9.jpg'
-  },
-  {
-    name: 'chicken parm',
-    servings: 4,
-    steps: 'dsfjdsfsdfjsd',
-    image: 'https://img.sndimg.com/food/image/upload/c_thumb,q_80,w_412,h_232/v1/img/mpx/5458752_16x9.jpg'
+    steps: 'https://www.foodiecrush.com/pesto-pasta-recipe/',
+    image: 'https://www.nospoonnecessary.com/wp-content/uploads/2016/04/Arugula-Pesto-Pasta-671.jpg'
   }
 ]
 
@@ -87,6 +57,13 @@ entrees.get('/entrees', (req, res) => {
 entrees.get('/entrees/:id', (req, res) => {
   Entree.findById(req.params.id, (err, foundEntree) => {
     res.render('showentree.ejs', {entree: foundEntree})
+  })
+})
+
+//Delete
+entrees.delete('/entrees/:id', (req, res) => {
+  Entree.findByIdAndRemove(req.params.id, (err, deletedEntree) => {
+    res.redirect('/entrees')
   })
 })
 

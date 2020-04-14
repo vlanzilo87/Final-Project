@@ -4,64 +4,34 @@ const Appetizer = require('../models/appetizers.js')
 
 const myAppetizers = [
   {
-    name: 'bruschetta',
+    name: 'Bruschetta',
     servings: 4,
     steps: 'https://www.delish.com/cooking/recipe-ideas/a27409128/best-bruschetta-tomato-recipe/',
     image: 'https://www.foxandbriar.com/wp-content/uploads/2019/03/Baked-Chicken-Parmesan-7-of-8.jpg'
   },
   {
-    name: 'chicken parm',
-    servings: 4,
-    steps: 'dsfjdsfsdfjsd',
-    image: 'https://img.sndimg.com/food/image/upload/c_thumb,q_80,w_412,h_232/v1/img/mpx/5458752_16x9.jpg'
+    name: 'Buffalo Chicken Salad',
+    servings: 6,
+    steps: 'https://www.delish.com/cooking/recipe-ideas/a27925036/easy-buffalo-chicken-salad-recipe/',
+    image: 'https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/delish-190611-buffalo-chicken-salad-192-portrait-pf-1561390263.png?crop=1.00xw:0.667xh;0,0.158xh&resize=480:*'
   },
   {
-    name: 'chicken parm',
-    servings: 4,
-    steps: 'dsfjdsfsdfjsd',
-    image: 'https://pinchofyum.com/wp-content/uploads/chicken-parmesan-recipe-1.jpg'
+    name: 'Deviled Eggs',
+    servings: 6,
+    steps: 'https://downshiftology.com/recipes/deviled-eggs/',
+    image: 'https://i2.wp.com/www.downshiftology.com/wp-content/uploads/2019/10/bacon-deviled-eggs-8.jpg'
   },
   {
-    name: 'chicken parm',
+    name: 'Crab Cakes',
     servings: 4,
-    steps: 'dsfjdsfsdfjsd',
-    image: 'https://img.sndimg.com/food/image/upload/c_thumb,q_80,w_412,h_232/v1/img/mpx/5458752_16x9.jpg'
+    steps: 'https://www.allrecipes.com/recipe/82347/best-ever-crab-cakes/?internalSource=streams&referringId=1240&referringContentType=Recipe%20Hub&clickId=st_trending_b',
+    image: 'https://www.jocooks.com/wp-content/uploads/2011/03/easy-crab-cakes-1.jpg'
   },
   {
-    name: 'chicken parm',
+    name: 'Jalapeno Poppers',
     servings: 4,
-    steps: 'dsfjdsfsdfjsd',
-    image: 'https://img.sndimg.com/food/image/upload/c_thumb,q_80,w_412,h_232/v1/img/mpx/5458752_16x9.jpg'
-  },
-  {
-    name: 'chicken parm',
-    servings: 4,
-    steps: 'dsfjdsfsdfjsd',
-    image: 'https://img.sndimg.com/food/image/upload/c_thumb,q_80,w_412,h_232/v1/img/mpx/5458752_16x9.jpg'
-  },
-  {
-    name: 'chicken parm',
-    servings: 4,
-    steps: 'dsfjdsfsdfjsd',
-    image: 'https://img.sndimg.com/food/image/upload/c_thumb,q_80,w_412,h_232/v1/img/mpx/5458752_16x9.jpg'
-  },
-  {
-    name: 'chicken parm',
-    servings: 4,
-    steps: 'dsfjdsfsdfjsd',
-    image: 'https://img.sndimg.com/food/image/upload/c_thumb,q_80,w_412,h_232/v1/img/mpx/5458752_16x9.jpg'
-  },
-  {
-    name: 'chicken parm',
-    servings: 4,
-    steps: 'dsfjdsfsdfjsd',
-    image: 'https://img.sndimg.com/food/image/upload/c_thumb,q_80,w_412,h_232/v1/img/mpx/5458752_16x9.jpg'
-  },
-  {
-    name: 'chicken parm',
-    servings: 4,
-    steps: 'dsfjdsfsdfjsd',
-    image: 'https://img.sndimg.com/food/image/upload/c_thumb,q_80,w_412,h_232/v1/img/mpx/5458752_16x9.jpg'
+    steps: 'https://www.allrecipes.com/recipe/20858/best-ever-jalapeno-poppers/?internalSource=staff%20pick&referringId=1241&referringContentType=Recipe%20Hub',
+    image: 'https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fcdn-image.myrecipes.com%2Fsites%2Fdefault%2Ffiles%2Fstyles%2F4_3_horizontal_-_1200x900%2Fpublic%2Fair-fryer-jalapeno-poppers-dcms-large.jpg%3Fitok%3DE_R2u2KI'
   }
 ]
 
@@ -87,6 +57,13 @@ appetizers.get('/appetizers', (req, res) => {
 appetizers.get('/appetizers/:id', (req, res) => {
   Appetizer.findById(req.params.id, (err, foundAppetizer) => {
     res.render('showapp.ejs', {appetizer: foundAppetizer})
+  })
+})
+
+//Delete
+appetizers.delete('/appetizers/:id', (req, res) => {
+  Appetizer.findByIdAndRemove(req.params.id, (err, deletedAppetizer) => {
+    res.redirect('/appetizers')
   })
 })
 

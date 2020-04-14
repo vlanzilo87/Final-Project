@@ -4,7 +4,7 @@ const Dessert = require('../models/desserts.js')
 
 const myDesserts = [
   {
-    name: 'chocolate pie',
+    name: 'Double Chocolate Cupcakes',
     servings: 4,
     steps: 'dsfjdsfsdfjsd',
     image: 'https://www.foxandbriar.com/wp-content/uploads/2019/03/Baked-Chicken-Parmesan-7-of-8.jpg'
@@ -32,37 +32,8 @@ const myDesserts = [
     servings: 4,
     steps: 'dsfjdsfsdfjsd',
     image: 'https://img.sndimg.com/food/image/upload/c_thumb,q_80,w_412,h_232/v1/img/mpx/5458752_16x9.jpg'
-  },
-  {
-    name: 'chicken parm',
-    servings: 4,
-    steps: 'dsfjdsfsdfjsd',
-    image: 'https://img.sndimg.com/food/image/upload/c_thumb,q_80,w_412,h_232/v1/img/mpx/5458752_16x9.jpg'
-  },
-  {
-    name: 'chicken parm',
-    servings: 4,
-    steps: 'dsfjdsfsdfjsd',
-    image: 'https://img.sndimg.com/food/image/upload/c_thumb,q_80,w_412,h_232/v1/img/mpx/5458752_16x9.jpg'
-  },
-  {
-    name: 'chicken parm',
-    servings: 4,
-    steps: 'dsfjdsfsdfjsd',
-    image: 'https://img.sndimg.com/food/image/upload/c_thumb,q_80,w_412,h_232/v1/img/mpx/5458752_16x9.jpg'
-  },
-  {
-    name: 'chicken parm',
-    servings: 4,
-    steps: 'dsfjdsfsdfjsd',
-    image: 'https://img.sndimg.com/food/image/upload/c_thumb,q_80,w_412,h_232/v1/img/mpx/5458752_16x9.jpg'
-  },
-  {
-    name: 'chicken parm',
-    servings: 4,
-    steps: 'dsfjdsfsdfjsd',
-    image: 'https://img.sndimg.com/food/image/upload/c_thumb,q_80,w_412,h_232/v1/img/mpx/5458752_16x9.jpg'
   }
+
 ]
 
 //Routes
@@ -87,6 +58,13 @@ desserts.get('/desserts', (req, res) => {
 desserts.get('/desserts/:id', (req, res) => {
   Dessert.findById(req.params.id, (err, foundDessert) => {
     res.render('showdessert.ejs', {dessert: foundDessert})
+  })
+})
+
+//Delete
+desserts.delete('/desserts/:id', (req, res) => {
+  Dessert.findByIdAndRemove(req.params.id, (err, deletedDessert) => {
+    res.redirect('/desserts')
   })
 })
 

@@ -146,7 +146,8 @@ footer {
 }
 
 .paragraph {
-  margin: 40px;
+  margin-top: 40px;
+  margin-bottom: 200px;
   margin-left: 300px;
   margin-right: 200px;
   padding: 10px;
