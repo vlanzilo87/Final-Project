@@ -18,6 +18,12 @@ h1 {
   margin: auto;
 }
 
+@media only screen and (max-width: 600px) {
+  h1 {
+    width: 300px;
+  }
+}
+
 h2 {
   text-align: center;
   color: #197d3e;
@@ -60,6 +66,12 @@ a:hover {
   width: 200px;
   position: absolute;
   text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+  .sidebar {
+    width: 100px;
+  }
 }
 
 ul {
@@ -129,6 +141,12 @@ img:hover {
   margin-left: 200px;
 }
 
+@media only screen and (max-width: 600px) {
+  .main {
+    margin-left: 100px;
+  }
+}
+
 .banner {
   background: url("https://media.istockphoto.com/photos/collage-of-bruschetta-antipasti-snack-tapas-banner-picture-id1144168039?k=6&m=1144168039&s=170667a&w=0&h=7R2HUqJJGwCR021rGBL6HI4vj2g57g6FUtnhUKqPabo=");
   margin: 0 auto;
@@ -162,6 +180,13 @@ footer {
   font-family: 'Ribeye', cursive;
   font-size: 20px;
   text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+  .paragraph {
+    margin-left: 150px;
+    margin-right: 100px;
+  }
 }
 
 .show {
@@ -220,4 +245,10 @@ p {
   text-align: center;
   margin-bottom: 100px;
   margin-left: 150px;
+}
+
+@media only screen and (max-width: 600px) {
+  .video {
+    margin-left: 75px;
+  }
 }
