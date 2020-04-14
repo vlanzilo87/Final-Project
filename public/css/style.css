@@ -147,6 +147,18 @@ img:hover {
   margin-left: 200px;
 }
 
+.main-index {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  position: relative;
+  font-family: 'Ribeye', cursive;
+  padding: 20px;
+  padding-bottom: 50px;
+  margin-left: 200px;
+}
+
 @media only screen and (max-width: 600px) {
   .main {
     margin-left: 100px;
