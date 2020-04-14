@@ -2,6 +2,14 @@ const express = require('express')
 const recipes = express.Router()
 const Recipe = require('../models/recipes.js')
 
+const isAuthenticated = (req, res, next) => {
+  if (req.session.currentUser) {
+    return next()
+  } else {
+    res.redirect('/sessions/new')
+  }
+}
+
 const myRecipes = [
   {
     name: 'chicken parm',
@@ -99,36 +107,31 @@ recipes.get('/recipes', (req, res) => {
 })
 
 //Create
-recipes.post('/recipes', (req, res) => {
+recipes.post('/recipes', isAuthenticated, (req, res) => {
   Recipe.create(req.body, (err, createdRecipe) => {
     res.redirect('/recipes')
   })
 })
 
 //Edit
-recipes.get('/recipes/:id/edit', (req, res) => {
+recipes.get('/recipes/:id/edit', isAuthenticated, (req, res) => {
   Recipe.findById(req.params.id, (err, foundRecipe) => {
     res.render('edit.ejs', {recipe: foundRecipe})
   })
 })
 
 //Update
-recipes.put('/recipes/:id', (req, res) => {
+recipes.put('/recipes/:id', isAuthenticated, (req, res) => {
   Recipe.findByIdAndUpdate(req.params.id, req.body, {new:true}, (err, updatedRecipe) => {
     res.redirect('/recipes')
   })
 })
 
 //Delete
-recipes.delete('/recipes/:id', (req, res) => {
+recipes.delete('/recipes/:id', isAuthenticated, (req, res) => {
   Recipe.findByIdAndRemove(req.params.id, (err, deletedRecipe) => {
     res.redirect('/recipes')
   })
-})
-
-//Requested parts
-recipes.get('/recipes/request', (req, res) => {
-  res.render('request.ejs')
 })
 
 //Show

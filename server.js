@@ -2,6 +2,7 @@
 const express = require('express')
 const mongoose = require('mongoose')
 const methodOverride = require('method-override')
+const session = require('express-session')
 
 const mongoURI = process.env.MONGODB_URI || 'mongodb://localhost:27017/final-project'
 const db = mongoose.connection
@@ -9,11 +10,17 @@ const db = mongoose.connection
 //Configuration
 const app = express()
 const PORT = process.env.PORT || 3000
+require('dotenv').config()
 
 //Middleware
 app.use(express.static('public'))
 app.use(express.urlencoded({extended: true}))
 app.use(methodOverride('_method'))
+app.use(session({
+  secret: process.env.SECRET,
+  resave: false,
+  saveUninitialized: false
+}))
 
 const recipesController = require('./controllers/recipes.js')
 app.use(recipesController)
@@ -26,6 +33,12 @@ app.use(entreesController)
 
 const dessertsController = require('./controllers/desserts.js')
 app.use(dessertsController)
+
+const userController = require('./controllers/users.js')
+app.use('/users', userController)
+
+const sessionsController = require('./controllers/sessions.js')
+app.use('/sessions', sessionsController)
 
 //Routes
 //Welcome

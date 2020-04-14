@@ -32,16 +32,13 @@
         <br>
         <br>
         <div class="list">
-          <%=recipe.name%>
-          <br>
-          <%=recipe.servings%>
-          <br>
-          $<%=recipe.steps%>
-          <br>
+          <p><%=recipe.name%></p>
+          <p><%=recipe.servings%> Servings</p>
+          <p><%=recipe.steps%></p>
         </div>
         <br>
-        <form action="/recipes/<%=recipe.id%>/edit"><input type="submit" value="EDIT"/></form>
-        <form action="/recipes/<%=recipe.id%>?_method=DELETE" method="POST"><input type="submit" value="DELETE"/></form>
+        <form action="/recipes/<%=recipe.id%>/edit"><input class="input" type="submit" value="EDIT"/></form>
+        <form action="/recipes/<%=recipe.id%>?_method=DELETE" method="POST"><input class="input" type="submit" value="DELETE"/></form>
       </div>
       <footer>
         <p>Thanks for visiting Abby's Favorites!</p>

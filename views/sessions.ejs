@@ -15,7 +15,7 @@
         <h1>Abby's Favorites</h1>
       </div>
     </header>
-    <h2>Add Your Recipe</h2>
+    <h2>Log In To Share</h2>
       <div class="sidebar">
         <ul>
           <li><a href="/index">Home</a></li>
@@ -24,20 +24,17 @@
           <li><a href="/entrees">Entrées</a></li>
           <li><a href="/desserts">Desserts</a></li>
           <li><a href="/recipes">Your Recipes</a></li>
-          <form action="/sessions?_method=DELETE" method="POST">
-            <input class="input" type="submit" value="Log Out"/>
-          </form>
         </ul>
       </div>
       <div class="new">
-        <form action="/recipes" method="POST">
-          Name: <input type="text" name="name" /><br/>
-          Servings: <input type="number" name="servings" /><br/>
-          Steps: <textarea rows="4" cols="30">Add steps here</textarea><br/>
-          Image: <input type="text" name="image" /><br/>
+        <form action="/sessions" method="POST">
+          <label for="name">User Name:</label>
+          <input type="text" name="username" required/>
+          <label for="color">Password:</label>
+          <input type="password" name="password" />
           <br>
-          <input class="input" type="submit" value="Add Recipe"/>
-        </form>
+          <input type="submit" value="Submit">
+        <form>
       </div>
       <footer>
         <p>Thanks for visiting Abby's Favorites!</p>
